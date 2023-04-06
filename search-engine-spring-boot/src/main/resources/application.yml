@@ -1,0 +1,18 @@
+web:
+  upload-path: D:/images
+
+spring:
+  resources:
+    static-locations: file:${web.upload-path}
+  redis:
+    host: 192.168.179.129
+    port: 6379
+    database:
+      db0: 0
+      db1: 1
+    timeout: 3000
+    pool:
+      max-active: 100
+      max-idle: 3
+      min-idle: 0
+      max-wait: -1
